@@ -1,0 +1,501 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    meta(name="description", content='')
+    meta(name="author", content='')
+    link(rel="preconnect", href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap", rel="stylesheet")
+    title NOTIFY
+    // Bootstrap core CSS
+    link(href="vendor/bootstrap/css/bootstrap.min.css", rel="stylesheet")
+    link(rel="icon", href="assets/images/notify.png")
+    // Additional CSS Files
+    link(rel="stylesheet", href="assets/css/fontawesome.css")
+    link(rel="stylesheet", href="assets/css/templatemo-space-dynamic.css")
+    link(rel="stylesheet", href="assets/css/animated.css")
+    link(rel="stylesheet", href="assets/css/owl.css")
+    //
+      TemplateMo 562 Space Dynamic
+      
+      https://templatemo.com/tm-562-space-dynamic
+    style.
+      .btn-primary {
+      background-color: #007bff;
+      color: #fff;
+      }
+      
+      
+      
+      .dropdown-menu {
+      background-color: #007bff;z-index:10000;
+      }
+      
+      .dropdown-item {
+      color: #fff;z-index:100001;
+      }
+      .serv_in {
+      display: none;
+      }
+      
+      /* Modal Styles */
+      .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+      
+      /* Modal Content */
+      .modal-content {
+      /* background-color: #fefefe; */
+      background-color: #007bff;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      }
+      
+      /* Close Button */
+      .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      }
+      
+      .close:hover,
+      .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+      }
+      
+      @media all and (max-width:500px) {
+      .serv_in {
+      display: block;
+      }
+      }
+  body
+    // ***** Preloader Start *****
+    #js-preloader.js-preloader
+      .preloader-inner
+        span.dot
+        .dots
+          span
+          span
+          span
+    // ***** Preloader End *****
+    // ***** Header Area Start *****
+    header.header-area.header-sticky.wow.slideInDown(data-wow-duration="0.75s", data-wow-delay="0s")
+      .container
+        .row
+          .col-12
+            nav.main-nav
+              // ***** Logo Start *****
+              a.logo(href="index.html")
+                h4 Noti
+                  span fy 
+              // ***** Logo End *****
+              // ***** Menu Start *****
+              ul.nav
+                li(class='')
+                  a.active(href="#top") Home
+                li(class='')
+                  a(href="#about") Descriptions
+                li(class='')
+                  a(href="#services") Services
+                li(class='')
+                  a(href="#aboutus") About
+                li(class='')
+                  a(href="#quality") Quality
+                li(class='')
+                  a(href="#contact") Message Us
+                li(class='')
+                    a(href="/login") Login
+                li(class='')
+                  .main-red-button
+                    a(href="/login") Login
+              a.menu-trigger
+                span Menu
+              // ***** Menu End *  ****
+    // ***** Header Area End *****
+    #top.main-banner.wow.fadeIn(data-wow-duration="1s", data-wow-delay="0.5s")
+      .container(style="position:relative;")
+        .row
+          .col-lg-12
+            .row
+              .col-lg-6.align-self-center
+                .left-content.header-text.wow.fadeInLeft(data-wow-duration="1s", data-wow-delay="1s")
+                  h6 Welcome to Notify
+                  h2 Discover
+                    em  The
+                    span Simplicity
+                    | Of Sharing &amp; Notifying
+                  // <p>With ease you can Share,Send & Schedule daily Timetable,Notifications,Alerts,Customer follow-up,Reminders, OTP, Verification links e.t.c in bulk, we mean to thousands of people at a time .with just a click on a button</p>
+                  p Effortlessly share, send, and schedule daily timetables, notifications, alerts, customer follow-ups, reminders, OTPs, verification links, and more in bulk. Reach thousands of people with just a click of a button.
+                  form#search(action="#", method="GET")
+                    fieldset
+                      input.email(type="address", name="address", placeholder="Its Just So Cool...,  Click Here ➡️👉", autocomplete="on", required, readonly)
+                    fieldset
+                      // <a href="#quicklinks"><button type="button" class="main-button">Scroll Down</button></a>
+                      // <div class="btn-group">
+                      //
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Quick Links
+                        </button>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#quicklinks">Scroll Down</a>
+                        <a class="dropdown-item" href="how_it_works.php">How it works</a>
+                        <a class="dropdown-item" href="tutorials.php">Tutorials</a>
+                        <a class="dropdown-item" href="recharge_home.php">Recharge</a>
+                        <a class="dropdown-item" href="sub_for_channel.php">Subscribe</a>
+                        <a class="dropdown-item" href="quick_send.php">Quick Send</a>
+                        <a class="dropdown-item" href="/login">Login</a>
+                        <a class="dropdown-item" href="help.php">Help</a>
+                        </div>
+                      // Button to trigger the modal
+                      button#openModalBtn(type="button") Quick Access
+                      // Modal
+                      #myModal.modal
+                        // Modal content
+                        .modal-content
+                          span.close X
+                          .modal-body
+                            a.dropdown-item(href="#quicklinks") Scroll Down
+                            a.dropdown-item(href="/how_it_works") How it works
+                            a.dropdown-item(href="tutorials.php") Video guides
+                            a.dropdown-item(href="recharge_home.php") Recharge
+                            a.dropdown-item(href="sub_for_channel.php") Subscribe
+                            a.dropdown-item(href="quick_send.php") Quick Send
+                            a.dropdown-item(href="/login") Login
+                            a.dropdown-item(href="help.php") Help
+                      // </div>
+                  br
+              .col-lg-6
+                .right-image.wow.fadeInRight(data-wow-duration="1s", data-wow-delay="0.5s")
+                  img(src="assets/images/phone.jpg", alt="team meeting")
+                #about
+    // ***** Features Big Item Start *****
+    section#quicklinks.section
+      .container
+        .row
+          .col-lg-7.col-md-12.col-sm-12(data-scroll-reveal="enter left move 30px over 0.6s after 0.4s")
+            img.rounded.img-fluid.d-block.mx-auto(src="assets/images/left-image.png", alt="App")
+          .right-text.col-lg-5.col-md-12.col-sm-12.mobile-top-fix
+            .left-heading
+              h5 Are you a lecturer?, A class rep?
+            .left-text
+              //
+                <p>Are your students/colleagues complaining about data cost??, are they unable to get school notifications easily??, some of them don't even have an android phone???,you have an urgent test at school??, the exam time was changed??,
+                wanna notify everyone and ensure they all get the message??? Relax, we've got you covered.<br><br> Did you know that you can send sms notifications containing timetable and any other details, which will be delivered to all
+                your student's phone number as SMS😮, relax its an automatic process.
+                <mark class="text-danger"> In short they have no reason to susbcribe for expensive data plans just to get info from whatsapp groups anymore,</mark><mark class="text-primary"> And its totally free, Yes you heard right, its totally free!!! to send SMS on our plartform,<mark class="text-danger"> and it will only cost each reciepient
+                <mark class="text-primary"> ₦3.4 naira </mark> per sms recieved., this means that <mark class="text-primary"> with just ₦100 naira you can recieve timetable/notifications as SMS for 30 good days😲</mark>.</mark>Calculate
+                your data cost in a month and substract from this..,good now you see .you should try us out.</mark>
+                </p>
+              p Are you facing complaints about high data costs and difficulty receiving school notifications? Do some of your students lack Android phones, making communication a challenge? Whether it&apos;s an urgent test or a change in exam time, we&apos;ve got you covered.
+              p Discover the convenience of sending SMS notifications, including timetables, directly to your students&apos; phones. It&apos;s automatic and absolutely free! No need for expensive data plans or WhatsApp groups. Each SMS costs just ₦3.4, meaning you can receive notifications for an entire month with just ₦100. Calculate your monthly data cost, and you&apos;ll see the savings. Try us out today!
+              a.btn.btn-primary(href="/how_it_works#school") See How It Works
+              // <a href="#about2" class="main-button">Discover More</a>
+        .row
+          .col-lg-12
+            .hr
+    // ***** Features Big Item End *****
+    br
+    // ***** Features Big Item Start *****
+    section#about.section
+      .container
+        .row
+          .col-lg-7.col-md-12.col-sm-12(data-scroll-reveal="enter left move 30px over 0.6s after 0.4s")
+            img.rounded.img-fluid.d-block.mx-auto(src="assets/images/asso.jpeg", alt="App")
+          .right-text.col-lg-5.col-md-12.col-sm-12.mobile-top-fix
+            .left-heading
+              h5 Are you an association leader? A member of an association? A spokesperson?
+            .left-text
+              p Do you need to keep your members informed about important meetings, schedule reminders, and send briefings to their email addresses? While sending emails with Gmail is free, it&apos;s more suited for personal use. Here, you can effortlessly send/schedule messages to thousands of people at once, and they get delivered instantly!
+              p Did you know that with our SMS services, you can send notifications and alerts with just one click? You can also send detailed briefings and more complex messages through our mail service, all at a cheap and affordable price.
+              p In short, you have no reason to manually call each other for updates, and logging into WhatsApp groups is unnecessary. It&apos;s absolutely free to send SMS on our platform. Each SMS costs ₦3.4 per recipient, and each email costs ₦1 per recipient. You even have the option to choose who pays for the notification being sent. With just ₦100, you can send/receive 30 alerts/notifications via SMS or 100 complex messages and briefings via email. It&apos;s that easy!
+              a.btn.btn-primary(href="/how_it_works#association") See How It Works
+              // <a href="#about2" class="main-button">Discover More</a>
+        .row
+          .col-lg-12
+            .hr
+    // ***** Features Big Item End *****
+    br
+    // ***** Features Big Item Start *****
+    section#about.section
+      .container
+        .row
+          .col-lg-7.col-md-12.col-sm-12(data-scroll-reveal="enter left move 30px over 0.6s after 0.4s")
+            img.rounded.img-fluid.d-block.mx-auto(src="assets/images/boss.jpeg", alt="App")
+          .right-text.col-lg-5.col-md-12.col-sm-12.mobile-top-fix
+            .left-heading
+              h5 Are you a business owner? An entrepreneur? Do you sell online?
+            .left-text
+              //
+                <p>Do you know that you actually need to give your customers a follow-up?,reminders?,notifications for special offers?, wish and greet them on special occasions like christmas, or new year e.t.c., this can be through SMS or Email,
+                and we can help you notify them..
+                <br><br>With our SMS services, you can send/schedule reminders for your customers,follow-up,notify them for special offers, e.t.c. Relax, its an automatic proccess. For more complex notifications, reminders and follow-up you
+                can utilize our email services at cheap and affordable price.
+                <mark class="text-danger"> In short you have no reason to have to call your customers, sending notifications seems more proffessional.</mark>
+                <mark class="text-primary"> <mark class="text-danger"> It will only cost
+                ₦3.4 naira per sms sent and ₦1 naira per email sent. Sending email with
+                gmail is free but its simply for personal use, here you can send/schedule a message to thousands of people at a time and it gets delivered instantly!!. With just ₦100 naira you can send 30 alerts/notifications,follow-up,reminder as SMS 😲 or 100 complex messages,briefings, special offers,greetings e.t.c as email. its just so cool.</mark></mark>
+                </p>
+              p Did you know that staying in touch with your customers through follow-ups, reminders, and special offer notifications is crucial for your business? Whether it&apos;s through SMS or Email, we&apos;ve got you covered.
+              p With our SMS services, you can effortlessly send and schedule reminders, follow-ups, and special offer notifications to your customers. It&apos;s an automatic process. For more detailed communications, you can use our email services at a cheap and affordable price.
+              p In short, there&apos;s no need to manually call your customers. Sending notifications appears more professional. It costs only ₦3.4 per SMS sent and ₦1 per email sent. While sending emails with Gmail is free for personal use, here you can send/schedule messages to thousands of people at once, and they get delivered instantly! With just ₦100, you can send 30 alerts/notifications, follow-ups, and reminders via SMS or 100 complex messages, briefings, special offers, greetings, etc., via email. It&apos;s that simple.
+              a.btn.btn-primary(href="/how_it_works#business") See How It Works
+              // <a href="#about2" class="main-button">Discover More</a>
+        .row
+          .col-lg-12
+            .hr
+    // ***** Features Big Item End *****
+    br
+    // ***** Features Big Item Start *****
+    section#about.section
+      .container
+        .row
+          .col-lg-7.col-md-12.col-sm-12(data-scroll-reveal="enter left move 30px over 0.6s after 0.4s")
+            img.rounded.img-fluid.d-block.mx-auto(src="assets/images/developer.jpeg", alt="App")
+          .right-text.col-lg-5.col-md-12.col-sm-12.mobile-top-fix
+            .left-heading
+              h5 Are you a web-developer?
+            .left-text
+              //
+                <p>Have you been looking for means to send OTP and other notifications as SMS to your users and Verification links and other messages to their email with ease?,and at an affordable price?, relax..,we've got you covered!.
+                <br><br>With our SMS services, you can send OTP & other short messages to your users, and verification link, and other complex messages to them with our Email delivery service.
+                <mark class="text-danger"> Relax, its pretty straight forward, we'll put through on how to go about the whole process.</mark>
+                <mark class="text-primary"> <mark class="text-danger"> It will only cost
+                ₦3.4 naira per sms sent and ₦1 naira per email sent, this means that with just ₦100 naira you can send 30 OTP/notifications as SMS 😲 or 100 verification links,congratulation messages,complex messages, and briefings, special offers e.t.c as email. its just so cool.</mark></mark>
+                </p>
+              p Are you searching for an easy and affordable way to send OTPs and other notifications as SMS to your users, along with verification links and other messages to their email? Look no further, we&apos;ve got you covered!
+              p With our SMS services, you can effortlessly send OTPs and short messages, while our Email delivery service handles verification links and other complex messages. It&apos;s a straightforward process, and we&apos;ll guide you through every step.
+              p It costs only ₦3.4 per SMS sent and ₦1 per email sent. This means that with just ₦100, you can send 30 OTPs/notifications via SMS or 100 verification links, congratulatory messages, complex messages, briefings, special offers, etc., via email. It&apos;s that simple and cost-effective!
+              a.btn.btn-primary(href="/how_it_works#developer") See How It Works
+              // <a href="#about2" class="main-button">Discover More</a>
+        .row
+          .col-lg-12
+            .hr
+    // ***** Features Big Item End *****
+    br
+    // ***** Features Big Item Start *****
+    section#about.section
+      .container
+        .row
+          .col-lg-7.col-md-12.col-sm-12(data-scroll-reveal="enter left move 30px over 0.6s after 0.4s")
+            img.rounded.img-fluid.d-block.mx-auto(src="assets/images/faq_graphic.jpg", alt="App")
+          .right-text.col-lg-5.col-md-12.col-sm-12.mobile-top-fix
+            .left-heading
+              h5 Wait all the above doesn&apos;t apply to you??..😆
+            .left-text
+              //
+                <p>Chill we still got you covered..normally in Nigeria it costs ₦4 naira per SMS, but here we are giving it to you ₦3.4 naira..that's cool right???.but that's not all..We give you access to send SMS in bulk to thousands of people
+                at once with just a click on a button😎.
+                <br><br>Sending mails with Gmail is free.but its simply meant for personal use, by that we mean you can only message 1 person at a time, but here you can message as much as you want all at once with just a click on a single
+                button.
+                <mark class="text-danger"> Relax, its pretty straight forward, we'll put you through on how to go about the whole process.</mark>
+                <mark class="text-primary"> <mark class="text-danger"> It will only cost
+                ₦3.4 naira per sms sent and ₦1 naira per email sent, this means that with just ₦100 naira you can send 30 SMS 😲 or 100 emails if you are sending bulk email. its just so cool.</mark></mark>
+                </p>
+              p We&apos;ve got you covered! In Nigeria, SMS usually costs ₦4, but we offer it to you at ₦3.4. Cool, right? But that&apos;s not all - enjoy the convenience of sending bulk SMS to thousands with just a click! 😎
+              p Sending emails with Gmail is free but limited to personal use – one person at a time. Here, you can message as many as you want all at once, with a single click.
+              p It&apos;s straightforward, and we&apos;ll guide you through the entire process. The cost is just ₦3.4 per SMS and ₦1 per email. With just ₦100, you can send 30 SMS or 100 bulk emails. It&apos;s that easy and cost-effective!
+              a.btn.btn-primary(href="/how_it_works#others") See How It Works
+              // <a href="#about2" class="main-button">Discover More</a>
+        .row
+          .col-lg-12
+            .hr
+    // ***** Features Big Item End *****
+    br
+    br
+    #aboutus.about.section
+      .container
+        .row
+          .col-lg-12
+            .row
+              .col-lg-6
+                .about-left-image.wow.fadeInLeft(data-wow-duration="1s", data-wow-delay="0.5s")
+                  img(src="assets/images/about-dec.png", alt="")
+                br
+              .col-lg-6.align-self-center.wow.fadeInRight(data-wow-duration="1s", data-wow-delay="0.5s")
+                .about-right-content
+                  .section-heading
+                    // <h6>About Us</h6>
+                    h4 What is Notify all about?
+                    .line-dec
+                  //
+                    <p>Notify is a Notification plartform, created to aid easy access towards informing,and notifying our colleagues,students,customers,users,co-workers,associations,co-operative e.t.c. Our service extends beyond the landscape
+                    of imagination as its quality is top notch and
+                    <mark class="text-danger"> its cost is riduculously low, by that we mean affordable by everyone.
+                  p
+                    | Notify is your go-to notification platform, designed for effortless communication with colleagues, students, customers, users, co-workers, associations, cooperatives, and more. Our service surpasses imagination with top-notch quality, and the best part is, it&apos;s incredibly affordable for everyone.
+                    p(class="serv_in")  OUR SERVICES IN DETAILS INCLUDES: 
+                  .row
+    #services
+    br
+    br
+    #about.about-us.section
+      .container
+        .row
+          .col-lg-4
+            .left-image.wow.fadeIn(data-wow-duration="1s", data-wow-delay="0.2s")
+              img(src="assets/images/about-left-image.png", alt="person graphic")
+          .col-lg-8.align-self-center
+            .services
+              .row
+                .col-lg-6
+                  .item.wow.fadeIn(data-wow-duration="1s", data-wow-delay="0.5s")
+                    .icon
+                      img(src="assets/images/service-icon-01.png", alt="reporting")
+                    .right-text
+                      h4 SMS NOTIFICATIONS
+                      p Easily send sms notification to multiple users at once.
+                .col-lg-6
+                  .item.wow.fadeIn(data-wow-duration="1s", data-wow-delay="0.7s")
+                    .icon
+                      img(src="assets/images/service-icon-02.png", alt="")
+                    .right-text
+                      h4 EMAIL NOTIFICATIONS
+                      p Create a mailing list,send emails to multiple people at once.
+                .col-lg-6
+                  .item.wow.fadeIn(data-wow-duration="1s", data-wow-delay="0.9s")
+                    .icon
+                      img(src="assets/images/service-icon-03.png", alt="")
+                    .right-text
+                      h4 SMS OTP
+                      p For developers, easily send verification OTP to your users.
+                .col-lg-6
+                  .item.wow.fadeIn(data-wow-duration="1s", data-wow-delay="1.1s")
+                    .icon
+                      img(src="assets/images/service-icon-04.png", alt="")
+                    .right-text
+                      h4 VERIFICATION LINKS
+                      p Easily send email verification links to your users.
+    #quality.our-services.section
+      .container
+        .row
+          .col-lg-6.align-self-center.wow.fadeInLeft(data-wow-duration="1s", data-wow-delay="0.2s")
+            .left-image
+              img(src="assets/images/services-left-image.png", alt="")
+          .col-lg-6.wow.fadeInRight(data-wow-duration="1s", data-wow-delay="0.2s")
+            .section-heading
+              h2 The quality of our service is exceptionally 
+                span unique
+                | &amp; top-notch
+              p Below we provide you with details and quality of our services and the delivery durations of bulk SMS and Email
+            .row
+              .col-lg-12
+                .third-bar.progress-skill-bar
+                  h4 Email delivery rate:
+                  span 96%
+                  .filled-bar
+                  .full-bar
+                  b Test our email service
+                  br
+                  small.text-primary enter your email address and we will send you a test email to confirm our service
+                  form(action="/test_email", method="post")
+                    input.form-control(type="email", name="email", placeholder="Enter your email address" required)
+                    button.btn.btn-primary.text-center(name="submit") Submit
+              .col-lg-12
+                .third-bar.progress-skill-bar
+                  h4 SMS deliery rate:
+                  span 96%
+                  .filled-bar
+                  .full-bar
+                  b Test our SMS service
+                  br
+                  small.text-primary enter your SMS and we will send you a test SMS to confirm our service
+                  form(action="/test_sms", method="post")
+                    input.form-control(type="number", name="number", placeholder="Enter your phone number" required)
+                    button.btn.btn-primary.text-center(name="submit2") Submit
+              //
+                <div class="col-lg-12">
+                <div class="third-bar progress-skill-bar">
+                <h4>Page Optimizations</h4>
+                <span>94%</span>
+                <div class="filled-bar"></div>
+                <div class="full-bar"></div>
+                </div>
+                </div>
+    #contact.contact-us.section
+      .container
+        .row
+          .col-lg-6.align-self-center.wow.fadeInLeft(data-wow-duration="0.5s", data-wow-delay="0.25s")
+            .section-heading
+              h2 Feel Free To Send Us a Message About Your Needs
+              p Our service extends beyond these demonstrations and can be  easily edited to fit in with your desires..
+              .phone-info
+                h4 For any enquiry, Call Us: 
+                  span
+                    i.fa.fa-phone
+                    a(href="#") 08120962197
+          .col-lg-6.wow.fadeInRight(data-wow-duration="0.5s", data-wow-delay="0.25s")
+            form#contact(action="/mail_us", method="post")
+              .row
+                .col-lg-6
+                  fieldset
+                    input#name(type="name", name="name", placeholder="Name", autocomplete="on", required)
+                .col-lg-6
+                  fieldset
+                    input#surname(type="surname", name="surname", placeholder="Surname", autocomplete="on", required)
+                .col-lg-12
+                  fieldset
+                    input#email(type="text", name="email", pattern="[^ @]*@[^ @]*", placeholder="Your Email", required)
+                .col-lg-12
+                  fieldset
+                    textarea#message.form-control(name="message", type="text", placeholder="Message", required)
+                .col-lg-12
+                  fieldset
+                    button#form-submit.main-button(type="submit") Send Message
+              .contact-dec
+                img(src="assets/images/contact-decoration.png", alt="")
+    footer
+      .container
+        .row
+          .col-lg-12.wow.fadeIn(data-wow-duration="1s", data-wow-delay="0.25s")
+            p
+              | © Copyright 2024 Notify. All Rights Reserved.
+            
+    // Scripts
+    script(src="vendor/jquery/jquery.min.js")
+    script(src="vendor/bootstrap/js/bootstrap.bundle.min.js")
+    script(src="assets/js/owl-carousel.js")
+    script(src="assets/js/animation.js")
+    script(src="assets/js/imagesloaded.js")
+    script(src="assets/js/templatemo-custom.js")
+   
+    script.
+      // Get the modal
+      var modal = document.getElementById('myModal');
+      
+      // Get the button that opens the modal
+      var btn = document.getElementById("openModalBtn");
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      
+      // When the user clicks the button, open the modal 
+      btn.onclick = function() {
+      modal.style.display = "block";
+      }
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+      modal.style.display = "none";
+      }
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+      if (event.target == modal) {
+      modal.style.display = "none";
+      }
+      }

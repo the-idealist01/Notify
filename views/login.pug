@@ -1,0 +1,67 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Login Page
+    link(rel="icon", href="assets/imgs/sovlance.png")
+    // Bootstrap CSS
+    link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css", rel="stylesheet")
+    // Custom CSS
+    link(rel="icon", href="assets/images/notify.png")
+    style.
+      html,
+      body 
+      {
+      height: 100%;
+      }
+      
+      body {
+      margin: 0;
+      padding: 0;
+      background-image: url('assets/images/developer.jpeg'); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+      }
+      
+      .blur-container {
+      height: 100%;
+      backdrop-filter: blur(9px);
+      -webkit-backdrop-filter: blur(9px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }
+      
+      .login-form {
+      background-color: rgba(255, 255, 255, 0.5); /* Adjust opacity as needed */
+      padding: 20px;
+      border-radius: 10px;
+      }
+  body
+    .blur-container
+      .container
+        .row.justify-content-center
+          .col-md-4
+            .card.login-form
+              .card-header
+                if message
+                  .alert.alert-danger(role="alert")
+                    = message
+                h3.text-center Login
+              .card-body
+                form(method="post" , action="/auth/login")
+                  .form-group
+                    label(for="username") Username:
+                    input#username.form-control(type="text", name="username", required)
+                  .form-group
+                    label(for="password") Password:
+                    input#password.form-control(type="password", name="password", required)
+                  button.btn.btn-primary.btn-block(type="submit", name="submit") Login
+                  br
+                  p.text-light.bg-primary.fw-bolder.text-capitalize(style="padding: 5px;") Not yet registered? 
+                    a.text-danger.fw-bolder(href="/register")  Register
+    // Bootstrap JS and jQuery
+    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js")
+    script(src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")
