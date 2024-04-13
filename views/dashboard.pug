@@ -19,14 +19,25 @@ html(lang="en")
     link(rel="shortcut icon", href="./assets/images/notify.png")
   body
     .container-scroller
-    
+      #proBanner.row.p-0.m-0.proBanner
+        .col-md-12.p-0.m-0
+          .card-body.card-body-padding.d-flex.align-items-center.justify-content-between
+            .ps-lg-1
+              .d-flex.align-items-center.justify-content-between
+                p.mb-0.font-weight-medium.me-3.buy-now-text Free 24/7 customer support, updates, and more with this template!
+                a.btn.me-2.buy-now-btn.border-0(href="https://www.bootstrapdash.com/product/purple-bootstrap-admin-template/?utm_source=organic&utm_medium=banner&utm_campaign=buynow_demo", target="_blank") Get Pro
+            .d-flex.align-items-center.justify-content-between
+              a(href="https://www.bootstrapdash.com/product/purple-bootstrap-admin-template/")
+                i.mdi.mdi-home.me-3.text-white
+              button#bannerClose.btn.border-0.p-0
+                i.mdi.mdi-close.text-white.me-0
       // partial:partials/_navbar.html
       nav.navbar.default-layout-navbar.col-lg-12.col-12.p-0.fixed-top.d-flex.flex-row
         .text-center.navbar-brand-wrapper.d-flex.align-items-center.justify-content-center
-          a.navbar-brand.brand-logo(href="#")
-            b NOTIFY
-          a.navbar-brand.brand-logo-mini(href="#")
-            b N
+          a.navbar-brand.brand-logo(href="index.html")
+            img(src="./assetsd/images/logo.svg", alt="logo")
+          a.navbar-brand.brand-logo-mini(href="index.html")
+            img(src="./assetsd/images/logo-mini.svg", alt="logo")
         .navbar-menu-wrapper.d-flex.align-items-stretch
           button.navbar-toggler.navbar-toggler.align-self-center(type="button", data-toggle="minimize")
             span.mdi.mdi-menu
@@ -43,10 +54,11 @@ html(lang="en")
                   img(src="./assetsd/images/faces/face1.jpg", alt="image")
                   span.availability-status.online
                 .nav-profile-text
-                  p.mb-1.text-black
-                    =name
+                  p.mb-1.text-black David Greymaax
               .dropdown-menu.navbar-dropdown(aria-labelledby="profileDropdown")
-               
+                a.dropdown-item(href="#")
+                  i.mdi.mdi-cached.me-2.text-success
+                  | Activity Log
                 .dropdown-divider
                 a.dropdown-item(href="#")
                   i.mdi.mdi-logout.me-2.text-primary
@@ -135,10 +147,8 @@ html(lang="en")
                   span.login-status.online
                   // change to offline or busy as needed
                 .nav-profile-text.d-flex.flex-column
-                  span.font-weight-bold.mb-2
-                    =username
-                  span.text-secondary.text-small
-                    =acc_type
+                  span.font-weight-bold.mb-2 David Grey. H
+                  span.text-secondary.text-small Project Manager
                 i.mdi.mdi-bookmark-check.text-success.nav-profile-badge
             li.nav-item
               a.nav-link(href="index.html")
@@ -238,7 +248,71 @@ html(lang="en")
                       i.mdi.mdi-diamond.mdi-24px.float-right
                     h2.mb-5 95,5741
                     h6.card-text Increased by 5%
-           
+            .row
+              .col-md-7.grid-margin.stretch-card
+                .card
+                  .card-body
+                    .clearfix
+                      h4.card-title.float-left Visit And Sales Statistics
+                      #visit-sale-chart-legend.rounded-legend.legend-horizontal.legend-top-right.float-right
+                    canvas#visit-sale-chart.mt-4
+              .col-md-5.grid-margin.stretch-card
+                .card
+                  .card-body
+                    h4.card-title Traffic Sources
+                    canvas#traffic-chart
+                    #traffic-chart-legend.rounded-legend.legend-vertical.legend-bottom-left.pt-4
+            .row
+              .col-12.grid-margin
+                .card
+                  .card-body
+                    h4.card-title Recent Tickets
+                    .table-responsive
+                      table.table
+                        thead
+                          tr
+                            th  Assignee 
+                            th  Subject 
+                            th  Status 
+                            th  Last Update 
+                            th  Tracking ID 
+                        tbody
+                          tr
+                            td
+                              img.me-2(src="./assetsd/images/faces/face1.jpg", alt="image")
+                              | David Grey
+                            td  Fund is not recieved 
+                            td
+                              label.badge.badge-gradient-success DONE
+                            td  Dec 5, 2017 
+                            td  WD-12345 
+                          tr
+                            td
+                              img.me-2(src="./assetsd/images/faces/face2.jpg", alt="image")
+                              | Stella Johnson
+                            td  High loading time 
+                            td
+                              label.badge.badge-gradient-warning PROGRESS
+                            td  Dec 12, 2017 
+                            td  WD-12346 
+                          tr
+                            td
+                              img.me-2(src="./assetsd/images/faces/face3.jpg", alt="image")
+                              | Marina Michel
+                            td  Website down for one week 
+                            td
+                              label.badge.badge-gradient-info ON HOLD
+                            td  Dec 16, 2017 
+                            td  WD-12347 
+                          tr
+                            td
+                              img.me-2(src="./assetsd/images/faces/face4.jpg", alt="image")
+                              | John Doe
+                            td  Loosing control on server 
+                            td
+                              label.badge.badge-gradient-danger REJECTED
+                            td  Dec 3, 2017 
+                            td  WD-12348 
             .row
               .col-12.grid-margin.stretch-card
                 .card
