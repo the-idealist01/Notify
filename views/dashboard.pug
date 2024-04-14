@@ -19,25 +19,14 @@ html(lang="en")
     link(rel="shortcut icon", href="../assetsd/images/favicon.ico")
   body
     .container-scroller
-      #proBanner.row.p-0.m-0.proBanner
-        .col-md-12.p-0.m-0
-          .card-body.card-body-padding.d-flex.align-items-center.justify-content-between
-            .ps-lg-1
-              .d-flex.align-items-center.justify-content-between
-                p.mb-0.font-weight-medium.me-3.buy-now-text Free 24/7 customer support, updates, and more with this template!
-                a.btn.me-2.buy-now-btn.border-0(href="https://www.bootstrapdash.com/product/purple-bootstrap-admin-template/?utm_source=organic&utm_medium=banner&utm_campaign=buynow_demo", target="_blank") Get Pro
-            .d-flex.align-items-center.justify-content-between
-              a(href="https://www.bootstrapdash.com/product/purple-bootstrap-admin-template/")
-                i.mdi.mdi-home.me-3.text-white
-              button#bannerClose.btn.border-0.p-0
-                i.mdi.mdi-close.text-white.me-0
+      
       // partial:partials/_navbar.html
       nav.navbar.default-layout-navbar.col-lg-12.col-12.p-0.fixed-top.d-flex.flex-row
         .text-center.navbar-brand-wrapper.d-flex.align-items-center.justify-content-center
-          a.navbar-brand.brand-logo(href="index.html")
-            img(src="../assetsd/images/logo.svg", alt="logo")
-          a.navbar-brand.brand-logo-mini(href="index.html")
-            img(src="../assetsd/images/logo-mini.svg", alt="logo")
+          a.navbar-brand.brand-logo(href="#")
+            b NOTIFY
+          a.navbar-brand.brand-logo-mini(href="#")
+            b N
         .navbar-menu-wrapper.d-flex.align-items-stretch
           button.navbar-toggler.navbar-toggler.align-self-center(type="button", data-toggle="minimize")
             span.mdi.mdi-menu
@@ -54,11 +43,10 @@ html(lang="en")
                   img(src="../assetsd/images/faces/face1.jpg", alt="image")
                   span.availability-status.online
                 .nav-profile-text
-                  p.mb-1.text-black David Greymaax
+                  p.mb-1.text-black
+                    =name
               .dropdown-menu.navbar-dropdown(aria-labelledby="profileDropdown")
-                a.dropdown-item(href="#")
-                  i.mdi.mdi-cached.me-2.text-success
-                  | Activity Log
+               
                 .dropdown-divider
                 a.dropdown-item(href="#")
                   i.mdi.mdi-logout.me-2.text-primary
@@ -147,8 +135,10 @@ html(lang="en")
                   span.login-status.online
                   // change to offline or busy as needed
                 .nav-profile-text.d-flex.flex-column
-                  span.font-weight-bold.mb-2 David Grey. H
-                  span.text-secondary.text-small Project Manager
+                  span.font-weight-bold.mb-2
+                    =username
+                  span.text-secondary.text-small
+                    =acc_type
                 i.mdi.mdi-bookmark-check.text-success.nav-profile-badge
             li.nav-item
               a.nav-link(href="index.html")
