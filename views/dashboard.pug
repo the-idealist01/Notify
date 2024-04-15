@@ -146,59 +146,52 @@ html(lang="en")
                 i.mdi.mdi-home.menu-icon
             li.nav-item
               a.nav-link(data-bs-toggle="collapse", href="#ui-basic", aria-expanded="false", aria-controls="ui-basic")
-                span.menu-title Basic UI Elements
+                span.menu-title Main Tools
                 i.menu-arrow
                 i.mdi.mdi-crosshairs-gps.menu-icon
               #ui-basic.collapse
                 ul.nav.flex-column.sub-menu
                   li.nav-item
-                    a.nav-link(href="pages/ui-features/buttons.html") Buttons
+                    a.nav-link(href="pages/ui-features/buttons.html") Send SMS
                   li.nav-item
-                    a.nav-link(href="pages/ui-features/typography.html") Typography
+                    a.nav-link(href="pages/ui-features/typography.html") Send Email
+                  li.nav-item
+                    a.nav-link(href="pages/ui-features/typography.html") Customize Mail Template
+                  li.nav-item
+                    a.nav-link(href="pages/ui-features/typography.html") Add Email/SMS To List
+                  li.nav-item
+                    a.nav-link(href="pages/ui-features/typography.html") Schedule Mail
+                  li.nav-item
+                    a.nav-link(href="pages/ui-features/typography.html") Schedule SMS
+                  li.nav-item
+                    a.nav-link(href="pages/ui-features/typography.html") Sent Mails
+                  li.nav-item
+                    a.nav-link(href="pages/ui-features/typography.html") Sent SMS
+                  li.nav-item
+                    a.nav-link(href="pages/ui-features/typography.html") Analytics
+                            
             li.nav-item
               a.nav-link(href="pages/icons/mdi.html")
-                span.menu-title Icons
+                span.menu-title Profile
                 i.mdi.mdi-contacts.menu-icon
             li.nav-item
               a.nav-link(href="pages/forms/basic_elements.html")
-                span.menu-title Forms
+                span.menu-title Buy Email/SMS Unit
                 i.mdi.mdi-format-list-bulleted.menu-icon
             li.nav-item
               a.nav-link(href="pages/charts/chartjs.html")
-                span.menu-title Charts
+                span.menu-title Hire US
                 i.mdi.mdi-chart-bar.menu-icon
             li.nav-item
               a.nav-link(href="pages/tables/basic-table.html")
-                span.menu-title Tables
+                span.menu-title Contact US
                 i.mdi.mdi-table-large.menu-icon
             li.nav-item
               a.nav-link(data-bs-toggle="collapse", href="#general-pages", aria-expanded="false", aria-controls="general-pages")
-                span.menu-title Sample Pages
+                span.menu-title Logout
                 i.menu-arrow
                 i.mdi.mdi-medical-bag.menu-icon
-              #general-pages.collapse
-                ul.nav.flex-column.sub-menu
-                  li.nav-item
-                    a.nav-link(href="pages/samples/blank-page.html")  Blank Page 
-                  li.nav-item
-                    a.nav-link(href="pages/samples/login.html")  Login 
-                  li.nav-item
-                    a.nav-link(href="pages/samples/register.html")  Register 
-                  li.nav-item
-                    a.nav-link(href="pages/samples/error-404.html")  404 
-                  li.nav-item
-                    a.nav-link(href="pages/samples/error-500.html")  500 
-            li.nav-item.sidebar-actions
-              span.nav-link
-                .border-bottom
-                  h6.font-weight-normal.mb-3 Projects
-                button.btn.btn-block.btn-lg.btn-gradient-primary.mt-4 + Add a project
-                .mt-4
-                  .border-bottom
-                    p.text-secondary Categories
-                  ul.gradient-bullet-list.mt-4
-                    li Free
-                    li Pro
+              
         // partial
         .main-panel
           .content-wrapper
@@ -215,180 +208,80 @@ html(lang="en")
                     i.mdi.mdi-alert-circle-outline.icon-sm.text-primary.align-middle
             .row
               .col-md-4.stretch-card.grid-margin
-                .card.bg-gradient-danger.card-img-holder.text-white
+                .card.bg-gradient-info.card-img-holder.text-white
                   .card-body
                     img.card-img-absolute(src="../assetsd/images/dashboard/circle.svg", alt="circle-image")
-                    h4.font-weight-normal.mb-3 Weekly Sales 
-                      i.mdi.mdi-chart-line.mdi-24px.float-right
+                    h4.font-weight-normal.mb-3 Subscribed Emails 
+                      i.mdi.mdi-email.mdi-24px.float-right
                     h2.mb-5 $ 15,0000
                     h6.card-text Increased by 60%
               .col-md-4.stretch-card.grid-margin
                 .card.bg-gradient-info.card-img-holder.text-white
                   .card-body
                     img.card-img-absolute(src="../assetsd/images/dashboard/circle.svg", alt="circle-image")
-                    h4.font-weight-normal.mb-3 Weekly Orders 
-                      i.mdi.mdi-bookmark-outline.mdi-24px.float-right
+                    h4.font-weight-normal.mb-3 Subscribed Numbers
+                      i.mdi.mdi-phone.mdi-24px.float-right
                     h2.mb-5 45,6334
                     h6.card-text Decreased by 10%
+              .col-md-4.stretch-card.grid-margin
+                .card.bg-gradient-primary.card-img-holder.text-white
+                  .card-body
+                    img.card-img-absolute(src="../assetsd/images/dashboard/circle.svg", alt="circle-image")
+                    h4.font-weight-normal.mb-3 Mail/SMS Units 
+                      i.mdi.mdi-diamond.mdi-24px.float-right
+                    h2.mb-5 95,5741
+                    h6.card-text Increased by 5%
+
+            .row
               .col-md-4.stretch-card.grid-margin
                 .card.bg-gradient-success.card-img-holder.text-white
                   .card-body
                     img.card-img-absolute(src="../assetsd/images/dashboard/circle.svg", alt="circle-image")
-                    h4.font-weight-normal.mb-3 Visitors Online 
+                    h4.font-weight-normal.mb-3 Sent Mails 
+                      i.mdi.mdi-email.mdi-24px.float-right
+                    h2.mb-5 $ 15,0000
+                    h6.card-text Increased by 60%
+              .col-md-4.stretch-card.grid-margin
+                .card.bg-gradient-success.card-img-holder.text-white
+                  .card-body
+                    img.card-img-absolute(src="../assetsd/images/dashboard/circle.svg", alt="circle-image")
+                    h4.font-weight-normal.mb-3 Sent SMS
+                      i.mdi.mdi-phone.mdi-24px.float-right
+                    h2.mb-5 45,6334
+                    h6.card-text Decreased by 10%
+              .col-md-4.stretch-card.grid-margin
+                .card.bg-gradient-warning.card-img-holder.text-white
+                  .card-body
+                    img.card-img-absolute(src="../assetsd/images/dashboard/circle.svg", alt="circle-image")
+                    h4.font-weight-normal.mb-3 Accumulated Revenue 
                       i.mdi.mdi-diamond.mdi-24px.float-right
                     h2.mb-5 95,5741
-                    h6.card-text Increased by 5%
+                    h6.card-text Increased by 5%        
+
             .row
-              .col-md-7.grid-margin.stretch-card
-                .card
+              .col-md-4.stretch-card.grid-margin
+                .card.bg-gradient-danger.card-img-holder.text-white
                   .card-body
-                    .clearfix
-                      h4.card-title.float-left Visit And Sales Statistics
-                      #visit-sale-chart-legend.rounded-legend.legend-horizontal.legend-top-right.float-right
-                    canvas#visit-sale-chart.mt-4
+                    img.card-img-absolute(src="../assetsd/images/dashboard/circle.svg", alt="circle-image")
+                    h4.font-weight-normal.mb-3 Scheduled mails 
+                      i.mdi.mdi-timer.mdi-24px.float-right
+                    h2.mb-5 $ 15,0000
+                    h6.card-text Increased by 60%
+              .col-md-4.stretch-card.grid-margin
+                .card.bg-gradient-danger.card-img-holder.text-white
+                  .card-body
+                    img.card-img-absolute(src="../assetsd/images/dashboard/circle.svg", alt="circle-image")
+                    h4.font-weight-normal.mb-3 Scheduled SMS
+                      i.mdi.mdi-timer.mdi-24px.float-right
+                    h2.mb-5 45,6334
+                    h6.card-text Decreased by 10%
+              
+           
+            .row  
               .col-md-5.grid-margin.stretch-card
                 .card
                   .card-body
-                    h4.card-title Traffic Sources
-                    canvas#traffic-chart
-                    #traffic-chart-legend.rounded-legend.legend-vertical.legend-bottom-left.pt-4
-            .row
-              .col-12.grid-margin
-                .card
-                  .card-body
-                    h4.card-title Recent Tickets
-                    .table-responsive
-                      table.table
-                        thead
-                          tr
-                            th  Assignee 
-                            th  Subject 
-                            th  Status 
-                            th  Last Update 
-                            th  Tracking ID 
-                        tbody
-                          tr
-                            td
-                              img.me-2(src="../assetsd/images/faces/face1.jpg", alt="image")
-                              | David Grey
-                            td  Fund is not recieved 
-                            td
-                              label.badge.badge-gradient-success DONE
-                            td  Dec 5, 2017 
-                            td  WD-12345 
-                          tr
-                            td
-                              img.me-2(src="../assetsd/images/faces/face2.jpg", alt="image")
-                              | Stella Johnson
-                            td  High loading time 
-                            td
-                              label.badge.badge-gradient-warning PROGRESS
-                            td  Dec 12, 2017 
-                            td  WD-12346 
-                          tr
-                            td
-                              img.me-2(src="../assetsd/images/faces/face3.jpg", alt="image")
-                              | Marina Michel
-                            td  Website down for one week 
-                            td
-                              label.badge.badge-gradient-info ON HOLD
-                            td  Dec 16, 2017 
-                            td  WD-12347 
-                          tr
-                            td
-                              img.me-2(src="../assetsd/images/faces/face4.jpg", alt="image")
-                              | John Doe
-                            td  Loosing control on server 
-                            td
-                              label.badge.badge-gradient-danger REJECTED
-                            td  Dec 3, 2017 
-                            td  WD-12348 
-            .row
-              .col-12.grid-margin.stretch-card
-                .card
-                  .card-body
-                    h4.card-title Recent Updates
-                    .d-flex
-                      .d-flex.align-items-center.me-4.text-muted.font-weight-light
-                        i.mdi.mdi-account-outline.icon-sm.me-2
-                        span jack Menqu
-                      .d-flex.align-items-center.text-muted.font-weight-light
-                        i.mdi.mdi-clock.icon-sm.me-2
-                        span October 3rd, 2018
-                    .row.mt-3
-                      .col-6.pe-1
-                        img.mb-2.mw-100.w-100.rounded(src="../assetsd/images/dashboard/img_1.jpg", alt="image")
-                        img.mw-100.w-100.rounded(src="../assetsd/images/dashboard/img_4.jpg", alt="image")
-                      .col-6.ps-1
-                        img.mb-2.mw-100.w-100.rounded(src="../assetsd/images/dashboard/img_2.jpg", alt="image")
-                        img.mw-100.w-100.rounded(src="../assetsd/images/dashboard/img_3.jpg", alt="image")
-                    .d-flex.mt-5.align-items-top
-                      img.img-sm.rounded-circle.me-3(src="../assetsd/images/faces/face3.jpg", alt="image")
-                      .mb-0.flex-grow
-                        h5.me-2.mb-2 School Website - Authentication Module.
-                        p.mb-0.font-weight-light It is a long established fact that a reader will be distracted by the readable content of a page.
-                      .ms-auto
-                        i.mdi.mdi-heart-outline.text-muted
-            .row
-              .col-md-7.grid-margin.stretch-card
-                .card
-                  .card-body
-                    h4.card-title Project Status
-                    .table-responsive
-                      table.table
-                        thead
-                          tr
-                            th  # 
-                            th  Name 
-                            th  Due Date 
-                            th  Progress 
-                        tbody
-                          tr
-                            td  1 
-                            td  Herman Beck 
-                            td  May 15, 2015 
-                            td
-                              .progress
-                                .progress-bar.bg-gradient-success(role="progressbar", style="width: 25%", aria-valuenow="25", aria-valuemin="0", aria-valuemax="100")
-                          tr
-                            td  2 
-                            td  Messsy Adam 
-                            td  Jul 01, 2015 
-                            td
-                              .progress
-                                .progress-bar.bg-gradient-danger(role="progressbar", style="width: 75%", aria-valuenow="75", aria-valuemin="0", aria-valuemax="100")
-                          tr
-                            td  3 
-                            td  John Richards 
-                            td  Apr 12, 2015 
-                            td
-                              .progress
-                                .progress-bar.bg-gradient-warning(role="progressbar", style="width: 90%", aria-valuenow="90", aria-valuemin="0", aria-valuemax="100")
-                          tr
-                            td  4 
-                            td  Peter Meggik 
-                            td  May 15, 2015 
-                            td
-                              .progress
-                                .progress-bar.bg-gradient-primary(role="progressbar", style="width: 50%", aria-valuenow="50", aria-valuemin="0", aria-valuemax="100")
-                          tr
-                            td  5 
-                            td  Edward 
-                            td  May 03, 2015 
-                            td
-                              .progress
-                                .progress-bar.bg-gradient-danger(role="progressbar", style="width: 35%", aria-valuenow="35", aria-valuemin="0", aria-valuemax="100")
-                          tr
-                            td  5 
-                            td  Ronald 
-                            td  Jun 05, 2015 
-                            td
-                              .progress
-                                .progress-bar.bg-gradient-info(role="progressbar", style="width: 65%", aria-valuenow="65", aria-valuemin="0", aria-valuemax="100")
-              .col-md-5.grid-margin.stretch-card
-                .card
-                  .card-body
-                    h4.card-title.text-white Todo
+                    h4.card-title.text-dark Add Number To List
                     .add-items.d-flex
                       input.form-control.todo-list-input(type="text", placeholder="What do you need to do today?")
                       button#add-task.add.btn.btn-gradient-primary.font-weight-bold.todo-list-add-btn Add
@@ -430,14 +323,65 @@ html(lang="en")
                               input.checkbox(type="checkbox")
                               | Pick up kids from school
                           i.remove.mdi.mdi-close-circle-outline
+
+
+                           .row  
+              .col-md-5.grid-margin.stretch-card
+                .card
+                  .card-body
+                    h4.card-title.text-dark Add email list
+                    .add-items.d-flex
+                      input.form-control.todo-list-input(type="text", placeholder="What do you need to do today?")
+                      button#add-task.add.btn.btn-gradient-primary.font-weight-bold.todo-list-add-btn Add
+                    .list-wrapper
+                      ul.d-flex.flex-column-reverse.todo-list.todo-list-custom
+                        li
+                          .form-check
+                            label.form-check-label
+                              input.checkbox(type="checkbox")
+                              | Meeting with Alisa
+                          i.remove.mdi.mdi-close-circle-outline
+                        li.completed
+                          .form-check
+                            label.form-check-label
+                              input.checkbox(type="checkbox", checked)
+                              | Call John
+                          i.remove.mdi.mdi-close-circle-outline
+                        li
+                          .form-check
+                            label.form-check-label
+                              input.checkbox(type="checkbox")
+                              | Create invoice
+                          i.remove.mdi.mdi-close-circle-outline
+                        li
+                          .form-check
+                            label.form-check-label
+                              input.checkbox(type="checkbox")
+                              | Print Statements
+                          i.remove.mdi.mdi-close-circle-outline
+                        li.completed
+                          .form-check
+                            label.form-check-label
+                              input.checkbox(type="checkbox", checked)
+                              | Prepare for presentation
+                          i.remove.mdi.mdi-close-circle-outline
+                        li
+                          .form-check
+                            label.form-check-label
+                              input.checkbox(type="checkbox")
+                              | Pick up kids from school
+                          i.remove.mdi.mdi-close-circle-outline
+
+
+               
           // content-wrapper ends
           // partial:partials/_footer.html
           footer.footer
             .container-fluid.d-flex.justify-content-between
-              span.text-muted.d-block.text-center.text-sm-start.d-sm-inline-block Copyright © bootstrapdash.com 2021
+              span.text-muted.d-block.text-center.text-sm-start.d-sm-inline-block Copyright © Notifyus.tech 2024
               span.float-none.float-sm-end.mt-1.mt-sm-0.text-end  Free 
-                a(href="https://www.bootstrapdash.com/bootstrap-admin-template/", target="_blank") Bootstrap admin template
-                | from Bootstrapdash.com
+                //- a(href="https://www.bootstrapdash.com/bootstrap-admin-template/", target="_blank") Bootstrap admin template
+                //- | from Bootstrapdash.com
           // partial
         // main-panel ends
       // page-body-wrapper ends

@@ -23,10 +23,10 @@ router.post("/profile", upload.single("avatar"), (req, res) => {
 router.post("/register", async(req, res) => {
     const hashedPassword = CryptoJS.AES.encrypt(req.body.password, "houwhuo0824u92083743802948920482094").toString()
     try {
-        const email = await User.findOne({ email: req.body.email, username: req.body.username, phone_no: req.body.phone_no })
+        const email = await User.findOne({ email: req.body.email })
 
         // if (email) return res.status(400).send("User already exists. Please login");
-        if (email) return res.status(400).render("user_exist", { error: "User Already Exists!" }
+        if (email) return res.status(400).render("user_exist", { error: "User Already Exists!", message: `A user with this email (${req.body.email}) is already registered on our system.` }
 
         )
 
